@@ -1,7 +1,8 @@
 import mongoose from 'mongoose'
 const MONGO_URL = "mongodb://127.0.0.1/Oriphal_db"
+const Hosted_Mongo_URL = "mongodb+srv://Oriphal:Oriphalmongodb%40123@cluster0.lfljeug.mongodb.net/?retryWrites=true&w=majority"
 
-mongoose.connect(MONGO_URL);
+mongoose.connect(Hosted_Mongo_URL);
 
 const db = mongoose.connection;
 
